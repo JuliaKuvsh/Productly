@@ -31,3 +31,21 @@
     background: $color-hovered;
     border-color: $color-hovered;
 } 
+
+.link-button {
+    color: $color-primary;
+    @extend %font-add;
+    display: inline-flex;
+    align-items: center;
+    transition: .3s;
+    &:hover {
+        color: $color-red;
+        .ico--play {
+            background-image: url("../img/icons/play-hover.svg");
+        }
+    }
+}
+
+.link-button__text {
+    margin-left: 9px;
+}

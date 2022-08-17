@@ -16,5 +16,7 @@
   "bugs": {
     "url": "https://github.com/JuliaKuvsh/Productly/issues"
   },
-  "homepage": "https://github.com/JuliaKuvsh/Productly#readme"
+  "homepage": "https://github.com/JuliaKuvsh/Productly#readme",
+  "dependencies": {
+  }
 }
