@@ -19,3 +19,25 @@
         }
     }
 }
+
+.header__logo-line  {
+    display: flex;
+}
+
+@media (max-width: $mobile-big-width) {
+    .header__logo-line {
+        justify-content: center;
+        flex-grow: 1;
+        position: relative;
+    }
+
+    .header__buttons {
+        display: none;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .header__wrapper {
+        padding-left: 24px;
+    }
+}

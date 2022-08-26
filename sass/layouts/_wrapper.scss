@@ -1,4 +1,18 @@
 .wrapper {
     max-width: $content-width;
     margin: auto;
+    //overflow: hidden;
 }
+
+@media (max-width: $tablet-width) {
+    .wrapper {
+        padding: 0 46px;
+    }
+}
+
+@media (max-width: $mobile-big-width) {
+    .wrapper {
+        padding: 0 21px;
+    }
+}
+
