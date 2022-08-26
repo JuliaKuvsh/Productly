@@ -1,6 +1,6 @@
 .contact-us {
     background: $color-background;
-    padding: 62px 82px;
+    padding: 62px 0;
 }
 
 .contact-us__title {
@@ -59,3 +59,37 @@
         min-width: 117px;
     }
 } 
+
+@media (max-width: $tablet-width) {
+    .contact-us {
+        text-align: center;
+    }
+
+    .contact-us-container {
+        flex-direction: column;
+    }
+
+    .contact-us__content {
+        max-width: 100%;
+        margin-bottom: 52px;
+    }
+
+    .contact-us__text {
+        justify-content: center;
+    }
+}
+
+@media (max-width: $mobile-big-width) {
+    .contact-us__line {
+        flex-direction: column;
+        margin-bottom: 0;
+        >* {
+            margin-bottom: 19px;
+        }
+    }
+
+    .contact-us__button {
+        margin-top: 24px;
+    }
+
+}

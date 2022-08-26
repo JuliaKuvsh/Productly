@@ -16,6 +16,9 @@
 
 .strategy {
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position: relative;
 }
 
 .strategy-wrapper {
@@ -26,8 +29,48 @@
 
 .strategy__content {
     padding: 24px 33px 26px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .strategy__name {
     margin: 0 0 29px;
+    text-align: left;
+    flex-grow: 1;
 } 
+
+@media (max-width: $tablet-width) {
+    .strategies {
+        text-align: center;
+    }
+
+    .strategies__tags {
+        justify-content: center;
+    }
+
+    .strategy-wrapper {
+        >* {
+            flex-basis: 48%;
+        }
+    }
+
+    .strategy {
+        overflow: hidden;
+        padding-top: 200px;
+    }
+
+    .strategy__image {
+        position: absolute;
+        top: 0;
+    } 
+}
+
+@media (max-width: $mobile-big-width) {
+    .strategy-wrapper {
+        >* {
+            flex-basis: 100%;
+        }
+    }
+
+}

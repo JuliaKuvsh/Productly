@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "style": "sass --watch source/sass/style.scss source/sass/style.css",
+    "deploy": "gh-pages -d source",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,6 @@
   },
   "homepage": "https://github.com/JuliaKuvsh/Productly#readme",
   "dependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

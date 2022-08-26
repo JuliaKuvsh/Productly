@@ -13,3 +13,9 @@
         color: $color-primary;
     }
 }
+
+@media (max-width: $tablet-width) {
+    .header__navigation {
+        display: none;
+    }
+}

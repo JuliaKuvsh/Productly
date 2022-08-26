@@ -18,7 +18,6 @@
     text-align: center;
 }
 
-//Tool Block
 .tool__icon {
     margin-bottom: 30px;
 }
@@ -26,3 +25,31 @@
 .tool__title {
     margin: 0 0 16px;
 } 
+
+@media (max-width: $tablet-width) {
+    .tool-container {
+        flex-wrap: wrap;
+        >.tool {
+            flex-basis: 43%;
+        }
+    }
+
+    .tool {
+        text-align: center;
+    }
+}
+
+@media (max-width: $mobile-big-width) {
+    .tools__button {
+        margin-top: 0;
+    }
+
+    .tool-container {
+        >.tool {
+            flex-basis: 100%;
+            margin-bottom: 47px;
+        }
+    }
+
+}
+

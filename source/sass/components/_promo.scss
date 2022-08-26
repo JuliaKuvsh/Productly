@@ -1,5 +1,6 @@
 .promo {
     padding: 30px 0;
+    overflow: hidden;
 }
 
 .promo__wrapper {
@@ -19,6 +20,12 @@
 .promo__buttons {
     display: flex;
     align-items: center;
+    >* {
+        margin-right: 44px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .promo__buttons>* {
@@ -31,3 +38,45 @@
     @extend %font-add;
     @include font($size: 18px, $height: 28px, $weight: normal)
 }
+
+@media (max-width: $tablet-width) {
+    .promo__text {
+        width: 380px;
+    }
+
+    .promo__content {
+        padding-right: 0;
+    }
+}
+
+
+@media (max-width: $mobile-big-width) {
+    .promo__buttons {
+        flex-direction: column;
+        >* {
+            margin-right: 0;
+            margin-bottom: 26px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .promo__text {
+        width: auto;
+    }
+
+    .promo__content {
+        text-align: center;
+    }
+
+    .promo__wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .promo__image {
+        max-width: 100%;
+        margin-bottom: 16px;
+    }
+}
+
