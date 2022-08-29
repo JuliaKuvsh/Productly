@@ -24,6 +24,17 @@
     display: flex;
 }
 
+.header__hamburger {
+    margin-right: 37px;
+}
+
+
+@media (max-width: $tablet-width) {
+    .header__wrapper {
+        padding-left: 24px;
+    }
+}
+
 @media (max-width: $mobile-big-width) {
     .header__logo-line {
         justify-content: center;
@@ -34,10 +45,9 @@
     .header__buttons {
         display: none;
     }
-}
 
-@media (max-width: $tablet-width) {
-    .header__wrapper {
-        padding-left: 24px;
+    .header__hamburger {
+        position: absolute;
+        left: 0;
     }
 }
